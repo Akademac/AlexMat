@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name='author' content="George">
+  <link rel='icon' type='image/png' href='Logoes/miniLogo.png' />
+  <title>ESL Training by Alex Mat</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --primary-bg: #F7FFF7;
+      --dark-text: #343434;
+      --accent-dark: #2F3061;
+      --accent-yellow: #FFE66D;
+      --accent-blue: #6CA6C1;
+    }
+  </style>
+</head>
+<body class="bg-[var(--primary-bg)] text-[var(--dark-text)]">
+
+<!-- HEADER -->
+<header class="bg-white shadow">
+  <div class="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
+    
+    <!-- LOGO levo -->
+    <a href="#" class="block">
+      <img src="Logoes/mainLogo3.png" alt="Logo" class="max-h-20 w-auto" />
+    </a>
+
+    <!-- NAVIGACIJA desno -->
+    <nav class="space-x-6 text-[var(--dark-text)] font-medium hidden md:flex">
+      <a href="#services" class="hover:text-[var(--accent-blue)]">Services</a>
+      <a href="#about" class="hover:text-[var(--accent-blue)]">About</a>
+      <a href="#booking" class="hover:text-[var(--accent-blue)]">Book</a>
+      <a href="#testimonials" class="hover:text-[var(--accent-blue)]">Testimonials</a>
+    </nav>
+  
+  </div>
+</header
+
+  <!-- HERO -->
+  <section class="py-40 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10">
+      <div class="md:w-1/2 text-center md:text-left">
+        <h1 class="text-4xl md:text-5xl font-bold text-[var(--accent-dark)] mb-4">Helping You Become a Confident ESL Teacher</h1>
+        <p class="text-lg md:text-xl mb-6">I offer personalized training, CV polishing, and demo video editing so you can succeed in teaching English online for Chinese platforms.</p>
+        <a href="#services" class="inline-block bg-[var(--accent-yellow)] text-[var(--dark-text)] font-semibold px-6 py-3 rounded hover:opacity-90 transition">Explore Services</a>
+      </div>
+      <div class="md:w-1/2">
+        <img src="Images/alex.jfif" alt="Your photo" class="rounded-full shadow-md w-65 h-65 object-cover mx-auto">
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="bg-[var(--accent-blue)] my-20 py-20 px-10 max-w-10xl mx-auto">
+    <h2 class="text-3xl font-bold text-center text-[var(--accent-dark)] mb-12">What I Offer</h2>
+    <div class="grid md:grid-cols-4 gap-8 text-center">
+      <div class="bg-white p-6 rounded shadow hover:shadow-lg">
+        <h3 class="text-xl font-semibold mb-2 text-[var(--accent-blue)]">1-on-1 ESL Training</h3>
+        <p>Preparation for demo lessons, interviews, and platforms like ClassIn.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow hover:shadow-lg">
+        <h3 class="text-xl font-semibold mb-2 text-[var(--accent-blue)]">Group ESL Training</h3>
+        <p>Enhance your first impression with a polished and professional video lesson.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow hover:shadow-lg">
+        <h3 class="text-xl font-semibold mb-2 text-[var(--accent-blue)]">Professional CV Editing</h3>
+        <p>Stand out with a tailored ESL resume that catches attention.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow hover:shadow-lg">
+        <h3 class="text-xl font-semibold mb-2 text-[var(--accent-blue)]">Demo Video Editing</h3>
+        <p>Enhance your first impression with a polished and professional video lesson.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-16 px-6 bg-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6 text-[var(--accent-dark)]">About Me</h2>
+      <p class="text-lg leading-relaxed">
+        Hi, I'm Alex Mat, a mentor with over 10 years of experience, dedicated to helping aspiring ESL teachers from the Balkans succeed online. I’ve helped dozens of educators land stable online jobs by guiding them through the hiring process, editing demo videos, and optimizing resumes to match Chinese ESL school expectations.
+      </p>
+    </div>
+  </section>
+
+ <!-- Booking Section -->
+<!-- Booking Section with Calendar -->
+<section id="booking" class="bg-[#F7FFF7] py-16 px-4">
+  <div class="max-w-2xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-[var(--dark-text)] mb-6">Book Your Training</h2>
+    
+    <!-- Calendar Card -->
+    <div class="bg-white p-6 rounded shadow-lg inline-block">
+      <!-- Date Picker -->
+      <label for="session-date" class="block mb-2 text-lg font-medium text-[var(--dark-text)]">
+        Choose a date:
+      </label>
+      <input
+        type="date"
+        id="session-date"
+        name="session-date"
+        class="w-full border border-gray-300 rounded px-4 py-2 text-[var(--dark-text)] focus:outline-none focus:ring-2 focus:ring-[#6CA6C1]"
+      />
+
+      <!-- Confirm Button BELOW -->
+      <button
+        class="mt-6 w-full bg-[#2F3061] hover:bg-[#6CA6C1] text-white font-semibold py-2 px-6 rounded"
+      >
+      <label for="session-time" class="block mb-2 text-lg font-medium text-[var(--dark-text)]">
+  Select a time:
+</label>
+<input
+  type="time"
+  id="session-time"
+  name="session-time"
+  class="w-full border border-gray-300 rounded px-4 py-2"
+/>
+        Confirm Booking
+      </button>
+    </div>
+  </div>
+</section>
+
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="py-16 px-6 bg-white">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10 text-[var(--accent-dark)]">Success Stories</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Video 1 -->
+        <div class="aspect-video bg-gray-200 rounded shadow flex items-center justify-center">
+          <span class="text-gray-600">Testimonial Video 1</span>
+        </div>
+        <!-- Video 2 -->
+        <div class="aspect-video bg-gray-200 rounded shadow flex items-center justify-center">
+          <span class="text-gray-600">Testimonial Video 2</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[var(--accent-dark)] text-white py-6 text-center">
+    <a href="#" class="block px-12">
+      <img src="Logoes/mainLogo3.png" alt="Logo" class="max-h-20 w-auto" />
+    </a>
+    <p>&copy; 2025 Webeldes – All rights reserved</p>
+  </footer>
+
+</body>
+</html>
